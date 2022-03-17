@@ -16,4 +16,4 @@ Add in the dependencies in gradle the lib version corresponding to 3.0.2:
 - `implementation 'com.google.zxing:core:3.2.1'`
 
 The camera permission can be included in the Manifest:
-`<uses-permission android:name="Android.permission.CAMERA" />`
+- `<uses-permission android:name="Android.permission.CAMERA" />`
