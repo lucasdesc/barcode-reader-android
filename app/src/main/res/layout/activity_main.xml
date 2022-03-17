@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#414040"
+    tools:context="com.readbarcodes.read.MainActivity">
+
+
+    <TextView
+        android:text="FAÇA A LEITURA DOS BARCODES PARA VALIDÁ-LOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-smallcaps"
+                android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="BARCODE 1:  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/R"
+         android:layout_alignBottom="@+id/Result"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/Result"
+        android:layout_marginTop="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/R"
+        android:layout_toEndOf="@+id/R" />
+
+    <TextView
+        android:text="BARCODE 2:  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/R2"
+        android:layout_below="@+id/R"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/Result2"
+        android:layout_alignBaseline="@+id/R2"
+        android:layout_alignBottom="@+id/R2"
+        android:layout_toRightOf="@+id/R2"
+        android:layout_toEndOf="@+id/R2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:onClick="scan_click"
+        android:text="LER BARCODE"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/R2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#01a437"
+        android:text="VALIDAR BARCODES"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:onClick="validar"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#909494"
+        android:text="LIMPAR BARCODES"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:onClick="limpa"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
